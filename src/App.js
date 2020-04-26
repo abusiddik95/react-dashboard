@@ -16,8 +16,7 @@ function App() {
     
     <div className="App">
       <AuthContextProvider>
-      
-
+    
       <Router>
         <Switch>
           
@@ -30,6 +29,10 @@ function App() {
         </Route>
 
         <Route path="/login">
+           <Login></Login>
+        </Route>
+
+        <Route path="/">
            <Login></Login>
         </Route>
 
