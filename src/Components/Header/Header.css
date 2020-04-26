@@ -1,0 +1,29 @@
+.header h3 {
+    z-index: 100000;
+    float: right;
+    color: #fff;
+    right: 30px;
+    top: -58px;
+    position: relative;
+}
+.header span{
+    z-index: 100000;
+    float: right;
+    color: #fff;
+    position: absolute;
+    top: 1px;
+    padding: 0 5px;
+    right: 5%;
+}
+.header .MuiIconButton-root{
+    padding: 12px 20px;
+}
+.header-login{
+    z-index: 100000;
+    float: right;
+    color: #fff;
+    font-weight: 600;
+    right: 45px;
+    top: -43px;
+    position: relative;
+}

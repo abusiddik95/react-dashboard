@@ -1,0 +1,17 @@
+.sm-chart{
+    width: 319px;
+    background: #fff;
+    display: inline-block;
+    padding: 0px 0;
+    margin: 0px 7px;
+}
+.bg-chart{
+    background-color: #fff;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+.single-chart h3{
+    text-align: center;
+    padding: 10px 0;
+    color: #847f7f;
+}

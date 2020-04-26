@@ -1,25 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { createContext } from 'react';
 import './App.css';
+import Login from './Components/Login/Login';
+import { AuthContextProvider, PrivateRoute } from './Components/Login/useAuth'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Dashboard from './Components/Dashboard/Dashboard';
 
 function App() {
+  const user = {name: 'kodu mia', email: 'abc@mail.com'}
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthContextProvider>
+      
+
+      <Router>
+        <Switch>
+          
+         {/* <PrivateRoute path="/dashboard">
+          <Dashboard></Dashboard>
+        </PrivateRoute>  */}
+
+        <Route path="/dashboard">
+          <Dashboard></Dashboard>
+        </Route>
+
+        <Route path="/login">
+           <Login></Login>
+        </Route>
+
+        </Switch>
+        </Router>
+      </AuthContextProvider>
     </div>
+   
   );
 }
 
